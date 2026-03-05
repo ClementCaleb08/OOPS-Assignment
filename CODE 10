@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+class Employee {
+    int id;
+    string name;
+
+public:
+    void setData(int id, string name) {
+        this->id = id;
+        this->name = name;
+    }
+
+    void display() {
+        cout << id << " " << name;
+    }
+};
+
+int main() {
+    Employee e;
+    e.setData(1, "Clement");
+    e.display();
+}
