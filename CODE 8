@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class Shape {
+public:
+    virtual void area() = 0;
+};
+
+class Rectangle : public Shape {
+public:
+    void area() {
+        cout << "Rectangle area\n";
+    }
+};
+
+class Triangle : public Shape {
+public:
+    void area() {
+        cout << "Triangle area\n";
+    }
+};
+
+int main() {
+    Rectangle r;
+    Triangle t;
+
+    r.area();
+    t.area();
+}
